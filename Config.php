@@ -256,7 +256,6 @@ class Mage_Core_Model_Config extends Mage_Core_Model_Config_Base
         if ($cacheLoad) {
             return $this;
         }
-        $this->_useCache = false;
         $this->loadModules();
         $this->loadDb();
         $this->saveCache();
